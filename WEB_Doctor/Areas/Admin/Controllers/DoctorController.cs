@@ -1,4 +1,5 @@
-﻿using Business.Services.Abstracts;
+﻿using Business.CustomException;
+using Business.Services.Abstracts;
 using Core.Models;
 using Core.RepositoryAbstracts;
 using Microsoft.AspNetCore.Mvc;
@@ -31,12 +32,28 @@ namespace WEB_Doctor.Areas.Admin.Controllers
         public IActionResult Create(Doctor doctor)
         {
             if (!ModelState.IsValid) return View();
-            _doctorService.AddDoctor(doctor);
+            try
+            {
+                _doctorService.AddDoctor(doctor);
+            }catch(PhotoFileException ex)
+            {
+                ModelState.AddModelError(ex.V, ex.Message);
+            }
+            catch (NotFoundException ex)
+            {
+                ModelState.AddModelError(ex.V, ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            
             return RedirectToAction("Index");
         }
 
         public IActionResult Delete(int id)
         {
+
             _doctorService.RemoveDoctor(id);
             return RedirectToAction(nameof(Index));
         }
@@ -50,7 +67,30 @@ namespace WEB_Doctor.Areas.Admin.Controllers
 
         public IActionResult Update(int id,Doctor doctor)
         {
-            _doctorService.UpdateDoctor(id, doctor);
+
+            try
+            {
+                _doctorService.UpdateDoctor(id, doctor);
+            }catch(PhotoFileException ex)
+            {
+                ModelState.AddModelError(ex.V, ex.Message);
+            }
+            catch (NotFoundException ex)
+            {
+                ModelState.AddModelError(ex.V, ex.Message);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+
+
+
+
+
+
+
             return RedirectToAction(nameof(Index));
         }
     }

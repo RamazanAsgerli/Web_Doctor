@@ -23,7 +23,7 @@ namespace Business.Services.Concretes
         {
             if (doctor == null) throw new NotFoundException("", "Doctor is null!!!");
            
-            if (!doctor.PhotoFile.ContentType.Contains("image/"))
+            if (!doctor.PhotoFile.ContentType.Contains(@"image/"))
             {
                 throw new PhotoFileException("PhotoFile", "PhotoFile format duz deyil");
             }
@@ -52,6 +52,10 @@ namespace Business.Services.Concretes
         {
             Doctor oldDoctor = _doctorRepository.Get(x => x.Id == id);
             if (oldDoctor == null) { throw new NotFoundException("", "Explore is not nul!!!!"); }
+            if (!oldDoctor.PhotoFile.ContentType.Contains(@"image/"))
+            {
+                throw new PhotoFileException("PhotoFile", "PhotoFile format duz deyil");
+            }
             if (oldDoctor != null)
             {
                 string path = "C:\\Users\\ll novbe\\Desktop\\WEB_Doctor\\WEB_Doctor\\wwwroot\\Upload\\Doctor\\" + doctor.PhotoFile.FileName;

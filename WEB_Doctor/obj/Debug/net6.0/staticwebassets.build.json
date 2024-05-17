@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "n8qhSZclKGVCX8xBHK/m33JIJ/UYiUfCLRFCVO7V3uo=",
+  "Hash": "stBfH+dze7aigKWSREgPTbX+p/XIV9nHSXUaTeMFYlw=",
   "Source": "WEB_Doctor",
   "BasePath": "_content/WEB_Doctor",
   "Mode": "Default",
@@ -33932,23 +33932,6 @@
       "OriginalItemSpec": "wwwroot\\Upload\\Doctor\\doctors-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\ll novbe\\Desktop\\WEB_Doctor\\WEB_Doctor\\wwwroot\\Upload\\Doctor\\doctors-3.jpg",
-      "SourceId": "WEB_Doctor",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ll novbe\\Desktop\\WEB_Doctor\\WEB_Doctor\\wwwroot\\",
-      "BasePath": "_content/WEB_Doctor",
-      "RelativePath": "Upload/Doctor/doctors-3.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Upload\\Doctor\\doctors-3.jpg"
-    },
-    {
       "Identity": "C:\\Users\\ll novbe\\Desktop\\WEB_Doctor\\WEB_Doctor\\wwwroot\\Upload\\Doctor\\doctors-4.jpg",
       "SourceId": "WEB_Doctor",
       "SourceType": "Discovered",
@@ -33964,23 +33947,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Upload\\Doctor\\doctors-4.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\ll novbe\\Desktop\\WEB_Doctor\\WEB_Doctor\\wwwroot\\Upload\\Doctor\\download.jpg",
-      "SourceId": "WEB_Doctor",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ll novbe\\Desktop\\WEB_Doctor\\WEB_Doctor\\wwwroot\\",
-      "BasePath": "_content/WEB_Doctor",
-      "RelativePath": "Upload/Doctor/download.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Upload\\Doctor\\download.jpg"
     },
     {
       "Identity": "C:\\Users\\ll novbe\\Desktop\\WEB_Doctor\\WEB_Doctor\\wwwroot\\Upload\\Doctor\\images (3).jpg",
